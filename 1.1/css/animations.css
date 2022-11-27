@@ -1,0 +1,154 @@
+/* This fade in animation is based on
+/* Loading Animation System by Neale Van Fleet from Rogue Amoeba
+/* https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/#top-of-site
+*/
+
+.animate {
+    animation-duration: 0.75s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+}
+
+/* Slide in effect */
+.animate.slide {
+    animation-name: animate-slide;
+}
+
+@keyframes animate-slide {
+    0% {
+        opacity: 0;
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .animate {
+        animation: none !important;
+    }
+}
+
+/* Grow In */
+.animate.grow {
+    animation-name: animate-grow;
+}
+
+@keyframes animate-grow {
+    0% {
+        opacity: 0;
+        transform: scale(1, 0);
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* Console animation */
+
+.console-line,
+.command {
+    position: relative;
+    padding: 0 1em;
+    margin: 0 0 9px 0;
+}
+
+.console-line:before,
+.console-line:after,
+.command:before,
+.command:after {
+    position: absolute;
+}
+
+.console-line:before,
+.command:before {
+    left: 0;
+    top: 0;
+    content: ">";
+}
+
+.response,
+.command {
+    padding-bottom: 9px;
+}
+
+.console-line {
+    display: inline-block;
+    min-width: 1em;
+    min-height: 1.5em;
+    box-sizing: border-box;
+}
+
+.console-line:after {
+    right: 0;
+    bottom: 0.25em;
+    content: "";
+    width: 0.8em;
+    height: 1.3em;
+    background: rgba(0, 0, 0, 0.67);
+    -webkit-animation: caretBlink 1s infinite;
+    animation: caretBlink 1s infinite;
+}
+
+.console-line.waiting {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.console-line.waiting:before {
+    display: none;
+}
+
+@-webkit-keyframes caretBlink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes caretBlink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.minimized {
+    width: 16%;
+    height: 35px;
+    transition: width 0.4s, height 0.4s;
+}
+
+.window {
+    transition: width 0.4s, height 0.4s;
+}

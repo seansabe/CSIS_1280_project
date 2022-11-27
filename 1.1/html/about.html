@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Main menu -->
+    <div class="main-menu" id="main-menu">
+        <h1> > about</h1>
+        <br>
+        <nav>
+            <a href="../index.html" id="home-link">home</a>
+            /
+            <a href="about.html" id="about-link">about me</a>
+            /
+            <a href="#" id="resume-link">resume</a>
+        </nav>
+        <br>
+        <br>
+    </div>
+
+    <!-- Window -->
+    <div class="window glass animate slide" id="window">
+        <header>
+            <div style="width: 78px;"></div>
+            <p id="window-title">about me</p>
+            <div class="buttons">
+                <span class="minimize" id="minimize"></span>
+                <span class="maximize" id="maximize"></span>
+                <span class="close"></span>
+            </div>
+        </header>
+
+        <!-- About content -->
+        <div id="content">
+            <div class="wrapper">
+                <div class="files">
+                    <div class="file" id="1" onclick="preview(this.id)">
+                        <i class="material-symbols-outlined">image</i>
+                        <p>Colombia.png</p>
+                    </div>
+                    <div class="file" id="2" onclick="preview(this.id)">
+                        <i class="material-symbols-outlined">folder</i>
+                        <p>What I like</p>
+                    </div>
+                    <div class="file" id="3" onclick="preview(this.id)">
+                        <i class="material-symbols-outlined">folder</i>
+                        <p>Hobbies</p>
+                    </div>
+                    <div class="file" id="4" onclick="preview(this.id)">
+                        <i class="material-symbols-outlined">folder</i>
+                        <p>Projects</p>
+                    </div>
+                    <div class="file" id="5" onclick="preview(this.id)">
+                        <i class="material-symbols-outlined">image</i>
+                        <p>avatar.jpg</p>
+                    </div>
+                </div>
+                <div class="preview" id="preview">
+                    <!-- First file about me -->
+                    <div id="country">
+                        <img src="../img/Colombia.png" alt="Colombia Map" width="90%">
+                        <br>
+                        <p>Sergio/about me/Colombia.png</p>
+                    </div>
+                    <!-- Second file about me -->
+                    <div id="likes">
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>cattos.jpg</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>football.png</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>animated series.jpg</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>hanging out.png</p>
+                        </div>
+                    </div>
+                    <!-- Third file about me -->
+                    <div id="hobbies">
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>videogames.png</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>I love cycling.png</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>table tenis.png</p>
+                        </div>
+                    </div>
+                    <!-- Fourth file about me -->
+                    <div id="projects">
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Web</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Mobile</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Block Coding</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Computer Vision</p>
+                        </div>
+                        <div id="subfile">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Videogames</p>
+                        </div>
+                    </div>
+                    <!-- Fifth file about me -->
+                    <div id="avatar">
+                        <img src="../img/avatar.jpg" alt="Avatar Pic" width="70%">
+                        <br>
+                        <p>Sergio/about me/avatar.jpg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <span class="copyright">&copy; 2022. All rights reserved.</span>
+    <script src="../js/index.js"></script>
+    <script src="../js/explorer.js"></script>
+</body>
+
+</html>

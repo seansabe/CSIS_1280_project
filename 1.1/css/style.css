@@ -1,0 +1,213 @@
+/* JetBrainsMono font import */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #11e8bb;
+    background: -moz-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
+    background: -webkit-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
+    background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
+}
+
+/* Glass effect */
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+p,
+h1,
+h2 {
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.window {
+    width: 95%;
+    height: 80%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+header {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+header .buttons {
+    width: 78px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header .buttons span {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.67);
+    transition: 0.2s ease-in;
+    margin-left: 10px;
+}
+
+header .minimize:hover,
+header .maximize:hover {
+    background-color: rgba(0, 0, 0, 0.27);
+    cursor: pointer;
+}
+
+.copyright {
+    color: rgba(0, 0, 0, 0.67);
+}
+
+#content {
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.67);
+    width: 100%;
+    max-height: 90%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url("../img/avatar.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.main-menu {
+    display: none;
+    text-align: center;
+}
+
+.main-menu h1 {
+    font-size: 50px;
+}
+
+.main-menu nav a {
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.main-menu nav a.active {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.files,
+.preview {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.preview {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.file:hover {
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: rgba(0, 0, 0, 0.67);
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+#country,
+#avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+#country img,
+#avatar img {
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+#likes,
+#hobbies,
+#projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#likes p,
+#hobbies p,
+#projects p {
+    padding-left: 10px;
+}
+
+#subfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+#subfile:hover {
+    background-color: rgba(0, 0, 0, 0.17);
+}
