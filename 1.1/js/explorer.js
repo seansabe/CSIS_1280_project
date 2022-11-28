@@ -6,7 +6,6 @@ document.getElementById("country").style.display = "none";
 document.getElementById("likes").style.display = "none";
 document.getElementById("hobbies").style.display = "none";
 document.getElementById("projects").style.display = "none";
-document.getElementById("avatar").style.display = "none";
 document.getElementsByClassName("preview-image")[0].style.display = "none";
 document.getElementsByClassName("preview-image")[1].style.display = "none";
 document.getElementsByClassName("preview-image")[2].style.display = "none";
@@ -23,7 +22,6 @@ function preview(id) {
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "none";
         document.getElementById("projects").style.display = "none";
-        document.getElementById("avatar").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
         document.getElementsByClassName("preview-image")[2].style.display = "none";
@@ -36,7 +34,6 @@ function preview(id) {
         document.getElementById("likes").style.display = "flex";
         document.getElementById("hobbies").style.display = "none";
         document.getElementById("projects").style.display = "none";
-        document.getElementById("avatar").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
         document.getElementsByClassName("preview-image")[2].style.display = "none";
@@ -49,7 +46,6 @@ function preview(id) {
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "flex";
         document.getElementById("projects").style.display = "none";
-        document.getElementById("avatar").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
         document.getElementsByClassName("preview-image")[2].style.display = "none";
@@ -57,29 +53,16 @@ function preview(id) {
 
     }
     // Projects
-    else if (id == 4) {
+    else {
         document.getElementById("country").style.display = "none";
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "none";
         document.getElementById("projects").style.display = "flex";
-        document.getElementById("avatar").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
         document.getElementsByClassName("preview-image")[2].style.display = "none";
         document.getElementsByClassName("description")[0].style.display = "none";
 
-    }
-    // Avatar
-    else {
-        document.getElementById("country").style.display = "none";
-        document.getElementById("likes").style.display = "none";
-        document.getElementById("hobbies").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("avatar").style.display = "flex";
-        document.getElementsByClassName("preview-image")[0].style.display = "none";
-        document.getElementsByClassName("preview-image")[1].style.display = "none";
-        document.getElementsByClassName("preview-image")[2].style.display = "none";
-        document.getElementsByClassName("description")[0].style.display = "none";
     }
 }
 
