@@ -43,29 +43,32 @@
         <!-- About content -->
         <div id="content">
             <div class="wrapper">
-                <div class="files">
-                    <div class="file" id="1" onclick="preview(this.id)">
-                        <i class="material-symbols-outlined">image</i>
-                        <p>Colombia.png</p>
-                    </div>
-                    <div class="file" id="2" onclick="preview(this.id)">
-                        <i class="material-symbols-outlined">folder</i>
-                        <p>What I like</p>
-                    </div>
-                    <div class="file" id="3" onclick="preview(this.id)">
-                        <i class="material-symbols-outlined">folder</i>
-                        <p>Hobbies</p>
-                    </div>
-                    <div class="file" id="4" onclick="preview(this.id)">
-                        <i class="material-symbols-outlined">folder</i>
-                        <p>Projects</p>
-                    </div>
-                    <div class="file" id="5" onclick="preview(this.id)">
-                        <i class="material-symbols-outlined">image</i>
-                        <p>avatar.jpg</p>
+                <div class="files col">
+                    <div class="row">
+                        <div class="file" id="1" onclick="preview(this.id)">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>Colombia.png</p>
+                        </div>
+                        <div class="file" id="2" onclick="preview(this.id)">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>What I like</p>
+                        </div>
+                        <div class="file" id="3" onclick="preview(this.id)">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Hobbies</p>
+                        </div>
+                        <div class="file" id="4" onclick="preview(this.id)">
+                            <i class="material-symbols-outlined">folder</i>
+                            <p>Projects</p>
+                        </div>
+                        <div class="file" id="5" onclick="preview(this.id)">
+                            <i class="material-symbols-outlined">image</i>
+                            <p>avatar.jpg</p>
+                        </div>
                     </div>
                 </div>
-                <div class="preview" id="preview">
+                <!-- Viewer -->
+                <div class="preview col" id="preview">
                     <!-- First file about me -->
                     <div id="country">
                         <img src="../img/Colombia.png" alt="Colombia Map" width="90%">
@@ -74,59 +77,68 @@
                     </div>
                     <!-- Second file about me -->
                     <div id="likes">
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
-                            <p>cattos.jpg</p>
+                            <p>cats.gif</p>
                         </div>
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
                             <p>football.png</p>
                         </div>
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
-                            <p>animated series.jpg</p>
+                            <p>animated series.gif</p>
                         </div>
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
                             <p>hanging out.png</p>
+                        </div>
+                        <!-- Subfile viewer -->
+                        <div class="subfile-preview">
+                            <img class="preview-image" src="" alt="">
                         </div>
                     </div>
                     <!-- Third file about me -->
                     <div id="hobbies">
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
                             <p>videogames.png</p>
                         </div>
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
                             <p>I love cycling.png</p>
                         </div>
-                        <div id="subfile">
+                        <div id="subfile" class="subfile">
                             <i class="material-symbols-outlined">image</i>
-                            <p>table tenis.png</p>
+                            <p>table tennis.png</p>
+                        </div>
+                        <!-- Subfile viewer -->
+                        <div class="subfile-preview">
+                            <img class="preview-image" src="" alt="">
                         </div>
                     </div>
                     <!-- Fourth file about me -->
                     <div id="projects">
-                        <div id="subfile">
-                            <i class="material-symbols-outlined">folder</i>
-                            <p>Web</p>
+                        <div id="subfile" class="subfile">
+                            <i class="material-symbols-outlined">draft</i>
+                            <p>Web.txt</p>
                         </div>
-                        <div id="subfile">
-                            <i class="material-symbols-outlined">folder</i>
-                            <p>Mobile</p>
+                        <div id="subfile" class="subfile">
+                            <i class="material-symbols-outlined">draft</i>
+                            <p>Mobile.txt</p>
                         </div>
-                        <div id="subfile">
-                            <i class="material-symbols-outlined">folder</i>
-                            <p>Block Coding</p>
+                        <div id="subfile" class="subfile">
+                            <i class="material-symbols-outlined">draft</i>
+                            <p>Computer Vision.txt</p>
                         </div>
-                        <div id="subfile">
-                            <i class="material-symbols-outlined">folder</i>
-                            <p>Computer Vision</p>
+                        <div id="subfile" class="subfile">
+                            <i class="material-symbols-outlined">draft</i>
+                            <p>Videogames.txt</p>
                         </div>
-                        <div id="subfile">
-                            <i class="material-symbols-outlined">folder</i>
-                            <p>Videogames</p>
+                        <!-- Subfile viewer -->
+                        <div class="subfile-preview">
+                            <img class="preview-image" src="" alt="">
+                            <p class="description"></p>
                         </div>
                     </div>
                     <!-- Fifth file about me -->
