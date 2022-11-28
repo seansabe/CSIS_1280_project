@@ -119,10 +119,7 @@ header .maximize:hover {
 }
 
 .wrapper {
-    width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 .row {
@@ -132,10 +129,21 @@ header .maximize:hover {
 }
 
 .col {
-    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+
+.col.col-5 {
+    width: 50%;
+}
+
+.col.col-4 {
+    width: 40%;
+}
+
+.col.col-2 {
+    width: 20%;
 }
 
 .preview {
