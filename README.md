@@ -1,3 +1,9 @@
+ # Version 1.2
+
+ **Resume**
+
+ Version 1.2 includes the page Resume to show the professional profile inside a window.
+ 
  # Version 1.1
 
  **About Me**
