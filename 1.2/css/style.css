@@ -142,9 +142,18 @@ header .maximize:hover {
     width: 40%;
 }
 
+.col.col-3 {
+    width: 30%;
+}
+
 .col.col-2 {
     width: 20%;
 }
+
+.col.col-1 {
+    width: 10%;
+}
+
 
 .preview {
     flex-direction: column;
@@ -293,4 +302,18 @@ header .maximize:hover {
     border-radius: 20px;
     font-size: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.link {
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.link i {
+    font-size: 25px;
+}
+
+.link a {
+    text-decoration: none;
 }
