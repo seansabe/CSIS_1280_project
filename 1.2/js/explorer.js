@@ -8,8 +8,7 @@ document.getElementById("hobbies").style.display = "none";
 document.getElementById("projects").style.display = "none";
 document.getElementsByClassName("preview-image")[0].style.display = "none";
 document.getElementsByClassName("preview-image")[1].style.display = "none";
-document.getElementsByClassName("preview-image")[2].style.display = "none";
-document.getElementsByClassName("description")[0].style.display = "none";
+document.getElementsByClassName("text")[0].style.display = "none";
 
 
 // Defining the click event for each file in the window
@@ -24,8 +23,7 @@ function preview(id) {
         document.getElementById("projects").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
-        document.getElementsByClassName("preview-image")[2].style.display = "none";
-        document.getElementsByClassName("description")[0].style.display = "none";
+        document.getElementsByClassName("text")[0].style.display = "none";
 
     }
     // Likes
@@ -36,8 +34,7 @@ function preview(id) {
         document.getElementById("projects").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
-        document.getElementsByClassName("preview-image")[2].style.display = "none";
-        document.getElementsByClassName("description")[0].style.display = "none";
+        document.getElementsByClassName("text")[0].style.display = "none";
 
     }
     // Hobbies
@@ -48,8 +45,7 @@ function preview(id) {
         document.getElementById("projects").style.display = "none";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
-        document.getElementsByClassName("preview-image")[2].style.display = "none";
-        document.getElementsByClassName("description")[0].style.display = "none";
+        document.getElementsByClassName("text")[0].style.display = "none";
 
     }
     // Projects
@@ -60,8 +56,7 @@ function preview(id) {
         document.getElementById("projects").style.display = "flex";
         document.getElementsByClassName("preview-image")[0].style.display = "none";
         document.getElementsByClassName("preview-image")[1].style.display = "none";
-        document.getElementsByClassName("preview-image")[2].style.display = "none";
-        document.getElementsByClassName("description")[0].style.display = "none";
+        document.getElementsByClassName("text")[0].style.display = "none";
 
     }
 }
@@ -106,7 +101,7 @@ document.getElementsByClassName("subfile")[6].addEventListener("mouseover", func
 });
 
 // Preview for Projects
-var description = {
+var text = {
     web: "- Blogs <br> - Business websites <br> - E-commerce sites <br> - Dashboards",
     mobile: "Designed and implemented the UI for several mobile apps. <br> - Kids activity tracking app <br> - Warehousing app",
     cv: "Built a wrinkle detection prototype for leather footwear using image processing and Machine Learning.",
@@ -114,29 +109,21 @@ var description = {
 }
 
 document.getElementsByClassName("subfile")[7].addEventListener("mouseover", function () {
-    document.getElementsByClassName("preview-image")[2].style.display = "flex";
-    document.getElementsByClassName("preview-image")[2].src = "";
-    document.getElementsByClassName("description")[0].style.display = "block";
-    document.getElementsByClassName("description")[0].innerHTML = description.web;
+    document.getElementsByClassName("text")[0].style.display = "block";
+    document.getElementsByClassName("text")[0].innerHTML = text.web;
 });
 
 document.getElementsByClassName("subfile")[8].addEventListener("mouseover", function () {
-    document.getElementsByClassName("preview-image")[2].style.display = "flex";
-    document.getElementsByClassName("preview-image")[2].src = "";
-    document.getElementsByClassName("description")[0].style.display = "block";
-    document.getElementsByClassName("description")[0].innerHTML = description.mobile;
+    document.getElementsByClassName("text")[0].style.display = "block";
+    document.getElementsByClassName("text")[0].innerHTML = text.mobile;
 });
 
 document.getElementsByClassName("subfile")[9].addEventListener("mouseover", function () {
-    document.getElementsByClassName("preview-image")[2].style.display = "flex";
-    document.getElementsByClassName("preview-image")[2].src = "";
-    document.getElementsByClassName("description")[0].style.display = "block";
-    document.getElementsByClassName("description")[0].innerHTML = description.cv;
+    document.getElementsByClassName("text")[0].style.display = "block";
+    document.getElementsByClassName("text")[0].innerHTML = text.cv;
 });
 
 document.getElementsByClassName("subfile")[10].addEventListener("mouseover", function () {
-    document.getElementsByClassName("preview-image")[2].style.display = "flex";
-    document.getElementsByClassName("preview-image")[2].src = "";
-    document.getElementsByClassName("description")[0].style.display = "block";
-    document.getElementsByClassName("description")[0].innerHTML = description.videogames;
+    document.getElementsByClassName("text")[0].style.display = "block";
+    document.getElementsByClassName("text")[0].innerHTML = text.videogames;
 });

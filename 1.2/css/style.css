@@ -35,7 +35,10 @@ body {
 
 p,
 h1,
-h2 {
+h2,
+h3,
+i,
+span {
     color: rgba(0, 0, 0, 0.67);
 }
 
@@ -88,7 +91,7 @@ header .maximize:hover {
     color: rgba(0, 0, 0, 0.67);
     width: 100%;
     height: 95%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .avatar {
@@ -126,12 +129,16 @@ header .maximize:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .col {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+}
+
+.col.col-6 {
+    width: 60%;
 }
 
 .col.col-5 {
@@ -154,6 +161,17 @@ header .maximize:hover {
     width: 10%;
 }
 
+.p-3 {
+    padding: 30px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.p-1 {
+    padding: 10px;
+}
 
 .preview {
     flex-direction: column;
@@ -170,7 +188,6 @@ header .maximize:hover {
     transition: 0.2s ease-in;
     border-radius: 10px;
     padding: 10px;
-    width: 15%;
 }
 
 .file:hover {
@@ -244,8 +261,7 @@ header .maximize:hover {
     height: 80%;
 }
 
-#country img,
-#avatar img {
+#country img {
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
@@ -292,28 +308,46 @@ header .maximize:hover {
 .subfile-preview img {
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    max-width: 90%;
-    width: 80%;
+    max-width: 70%;
 }
 
-.description {
+.text {
     padding: 50px;
     background-color: white;
     border-radius: 20px;
-    font-size: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.link {
-    justify-content: center;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.67);
+.text p {
+    font-size: 20px;
 }
 
-.link i {
+.links i {
     font-size: 25px;
 }
 
-.link a {
+.skills span {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.b-shadow {
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.37);
+}
+
+.download {
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.67);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+}
+
+.footer {
+    column-gap: 50px;
+}
+
+.footer .col {
+    justify-content: center;
 }

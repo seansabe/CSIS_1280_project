@@ -3,6 +3,11 @@
  **Resume**
 
  Version 1.2 includes the page Resume to show the professional profile inside a window.
+
+ Main featured added:
+ - Custom ``col`` and ``row`` grid system
+ - Custom ``padding`` class
+ - Resume download
  
  # Version 1.1
 
@@ -14,7 +19,7 @@
  - File selection
  - File preview
  - Background hover effect
- - ``HTML DOM`` 
+ - ``HTML DOM``
  
  # Version 1.0
 
