@@ -9,6 +9,10 @@ document.getElementById("projects").style.display = "none";
 document.getElementsByClassName("preview-image")[0].style.display = "none";
 document.getElementsByClassName("preview-image")[1].style.display = "none";
 document.getElementsByClassName("text")[0].style.display = "none";
+document.getElementById("1").classList.remove("active");
+document.getElementById("2").classList.remove("active");
+document.getElementById("3").classList.remove("active");
+document.getElementById("4").classList.remove("active");
 
 
 // Defining the click event for each file in the window
@@ -17,6 +21,10 @@ function preview(id) {
     document.getElementById("preview").style.borderLeft = "";
     // Country
     if (id == 1) {
+        document.getElementById("1").classList.add("active");
+        document.getElementById("2").classList.remove("active");
+        document.getElementById("3").classList.remove("active");
+        document.getElementById("4").classList.remove("active");
         document.getElementById("country").style.display = "flex";
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "none";
@@ -28,6 +36,10 @@ function preview(id) {
     }
     // Likes
     else if (id == 2) {
+        document.getElementById("1").classList.remove("active");
+        document.getElementById("2").classList.add("active");
+        document.getElementById("3").classList.remove("active");
+        document.getElementById("4").classList.remove("active");
         document.getElementById("country").style.display = "none";
         document.getElementById("likes").style.display = "flex";
         document.getElementById("hobbies").style.display = "none";
@@ -39,6 +51,10 @@ function preview(id) {
     }
     // Hobbies
     else if (id == 3) {
+        document.getElementById("1").classList.remove("active");
+        document.getElementById("2").classList.remove("active");
+        document.getElementById("3").classList.add("active");
+        document.getElementById("4").classList.remove("active");
         document.getElementById("country").style.display = "none";
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "flex";
@@ -50,6 +66,10 @@ function preview(id) {
     }
     // Projects
     else {
+        document.getElementById("1").classList.remove("active");
+        document.getElementById("2").classList.remove("active");
+        document.getElementById("3").classList.remove("active");
+        document.getElementById("4").classList.add("active");
         document.getElementById("country").style.display = "none";
         document.getElementById("likes").style.display = "none";
         document.getElementById("hobbies").style.display = "none";

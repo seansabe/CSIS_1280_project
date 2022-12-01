@@ -18,10 +18,8 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: #11e8bb;
-    background: -moz-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
-    background: -webkit-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
-    background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
+    background: rgb(221, 255, 111);
+    background: linear-gradient(90deg, rgba(221, 255, 111, 1) 0%, rgba(111, 255, 206, 1) 50%, rgba(129, 154, 255, 1) 100%);
 }
 
 /* Glass effect */
@@ -90,7 +88,7 @@ header .maximize:hover {
     padding: 10px;
     color: rgba(0, 0, 0, 0.67);
     width: 100%;
-    height: 95%;
+    height: 90%;
     overflow-y: auto;
 }
 
@@ -195,6 +193,10 @@ header .maximize:hover {
     background-color: rgba(0, 0, 0, 0.17);
     border-radius: 10px;
     cursor: pointer;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.17);
 }
 
 .material-icons {
@@ -302,13 +304,12 @@ header .maximize:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .subfile-preview img {
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    max-width: 70%;
+    width: 100%;
 }
 
 .text {
@@ -322,7 +323,7 @@ header .maximize:hover {
     font-size: 20px;
 }
 
-.links i {
+.footer i {
     font-size: 25px;
 }
 
@@ -339,15 +340,39 @@ header .maximize:hover {
 .download {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.67);
-    padding: 5px 10px;
+    padding: 5px 20px;
     background-color: rgba(0, 0, 0, 0.17);
     border-radius: 10px;
+    align-items: center;
+    display: flex;
+    width: fit-content;
 }
 
-.footer {
-    column-gap: 50px;
+.column-gap-1 {
+    column-gap: 10px;
 }
 
-.footer .col {
-    justify-content: center;
+.img-description {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 30px;
+}
+
+.footer .row {
+    align-items: center;
+}
+
+.border-left {
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.border-right {
+    border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
