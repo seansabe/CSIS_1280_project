@@ -1,3 +1,18 @@
+ # Version 1.3
+
+ **Improvements**
+ 
+ Version 1.3 includes serveral improvements over the previus versions.
+
+ Main features added:
+ - New background gradient
+ - Active element indicator in About Me page using ``JavaScript``
+ - Window header ``bottom-border``
+ - Revamped ``overflow`` of the content viewer
+
+ <img src="1.2/resources/5.png" alt="Version 1.3 - Home">
+ <img src="1.2/resources/6.png" alt="Version 1.3 - About Me">
+ 
  # Version 1.2
 
  **Resume**
@@ -21,7 +36,7 @@
  - File selection
  - File preview
  - Background hover effect
- - ``HTML DOM``
+ - ``HTML DOM`` to simulate folder selection and file preview
 
 <img src="1.2/resources/3.png" alt="Version 1.1 - About Me">
 
