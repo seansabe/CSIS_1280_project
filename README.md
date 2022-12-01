@@ -34,6 +34,6 @@
  - Minimizing and Maximizing window effect
  - Main menu slide in effect after minimizing
 
- ![Version 1.1](url "/1.2/resources/1.png")
- ![Version 1.1](url "/1.2/resources/2.png")
+<img src="1.2/resources/1.png" alt="Version 1.1 - Home">
+<img src="1.2/resources/2.png" alt="Version 1.1 - Home">
  
