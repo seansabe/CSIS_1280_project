@@ -1,3 +1,19 @@
+ # Project Summary
+
+This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
+
+ Features:
+ - Glass and window shadow effect achieved with ``CSS rgba`` properties 
+ - Console-like window for Home page styled with ``CSS``
+ - Minimizing and maximizing effect using ``CSS transitions``
+ - Button blinking effect to indicate the minimize and maximize effects using ``JavaScript``
+ - Get the date as the welcome line in the console window by setting the ``Date.now()``
+ - User commands and responses simulation using ``JavaScript objects`` with customized ``write``, ``wait``, ``command`` functions
+ - File Explorer-like window for About Me page styled with ``CSS``
+ - File interaction and preview made with ``JavaScript DOM``
+ - 3 column layout style for Resume page using ``CSS flex``
+ 
+ 
  # Version 1.3
 
  **Improvements**
