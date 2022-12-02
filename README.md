@@ -6,7 +6,7 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - Glass and window shadow effect achieved with ``CSS rgba`` properties 
  - Console-like window for Home page styled with ``CSS``
  - Minimizing and maximizing effect using ``CSS transitions``
- - Button blinking effect to indicate the minimize and maximize effects using ``JavaScript``
+ - Button blinking effect to indicate the minimize and maximize effects using ``CSS keyframes`` and ``JavaScript``
  - Get the date as the welcome line in the console window by setting the ``Date.now()``
  - User commands and responses simulation using ``JavaScript objects`` with customized ``write``, ``wait``, ``command`` functions
  - File Explorer-like window for About Me page styled with ``CSS``
@@ -15,6 +15,8 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - Responsive design using ``CSS`` media queries
  
  # Project Versions
+
+ The following describes the work from scratch to last version available.
 
  # Version 1.3
 
@@ -75,3 +77,17 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
 <img src="1.2/resources/1.png" alt="Version 1.0 - Home">
 <img src="1.2/resources/2.png" alt="Version 1.0 - Home">
  
+
+ # Code References
+
+ **Console simulator**
+
+ Terminal emulator based on Jesse Kernaghan's code from
+ https://codepen.io/jessekernaghan/pen/xwvdBL
+
+ **Window fade-in animation effect**
+
+This fade in animation is based on loading Animation System by Neale Van Fleet from Rogue Amoeba
+https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/#top-of-site
+
+

@@ -1,0 +1,32 @@
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    .minimized {
+        width: 280px;
+    }
+
+    .col.col-md-5 {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .col.col-md-10 {
+        margin-top: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        border-left: none;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .col.col-lg-5 {
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .col.col-lg-10 {
+        margin-top: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        border-left: none;
+    }
+}
