@@ -14,8 +14,8 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - 3 column layout style for Resume page using ``CSS flex``
  - Responsive design using ``CSS`` media queries
 
- <img src="1.2/resources/7.png" alt="Version 1.3 - Home">
- <img src="1.2/resources/8.png" alt="Version 1.3 - Home">
+ <img src="1.3/resources/7.png" alt="Version 1.3 - Home">
+ <img src="1.3/resources/8.png" alt="Version 1.3 - Home">
  
  # Project Versions
 
@@ -33,8 +33,8 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - Window header ``bottom-border``
  - Revamped ``overflow`` of the content viewer
 
- <img src="1.2/resources/5.png" alt="Version 1.3 - Home">
- <img src="1.2/resources/6.png" alt="Version 1.3 - About Me">
+ <img src="1.3/resources/5.png" alt="Version 1.3 - Home">
+ <img src="1.3/resources/6.png" alt="Version 1.3 - About Me">
  
  # Version 1.2
 
