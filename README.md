@@ -14,7 +14,8 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - 3 column layout style for Resume page using ``CSS flex``
  - Responsive design using ``CSS`` media queries
  
- 
+ # Project Versions
+
  # Version 1.3
 
  **Improvements**
