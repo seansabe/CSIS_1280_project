@@ -12,6 +12,7 @@ This website uses with ``HTML5``, ``CSS`` and vanilla ``JavaScript``.
  - File Explorer-like window for About Me page styled with ``CSS``
  - File interaction and preview made with ``JavaScript DOM``
  - 3 column layout style for Resume page using ``CSS flex``
+ - Responsive design using ``CSS`` media queries
  
  
  # Version 1.3
